@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#1A1A59">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTUALIZACION DE DATOS"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Contenedor de usuario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#3B3B85"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <!-- Icono de usuario -->
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_user_placeholder"
+            android:contentDescription="Icono de usuario"
+            android:tint="#FFFFFF"
+            android:layout_gravity="center" />
+
+        <!-- Información de usuario -->
+        <TextView
+            android:id="@+id/user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de usuario:\nPeso: 70 kg\nEstatura: 1.75 cm"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <!-- Título de edición -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Información"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campos de edición -->
+    <EditText
+        android:id="@+id/edit_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:padding="10dp"
+        android:hintTextColor="#AAAAAA"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edit_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estatura"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:padding="10dp"
+        android:hintTextColor="#AAAAAA"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de usuario"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:padding="10dp"
+        android:hintTextColor="#AAAAAA"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Botón de actualizar -->
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6A0DAD"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
